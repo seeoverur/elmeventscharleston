@@ -3,217 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girls Night Out in Holy City - Charleston SC</title>
+    <title>Things To Do For Girls Trip In Charleston SC</title>
     <meta name="description" content="Plan the ultimate fling before the ring in Charleston SC. Discover the best girls getaways with Elm Events Charleston's complete guide to unforgettable festivities.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things To Do For Girls Trip In Charleston SC</title>
+    <meta name="description" content="Plan the ultimate fling before the ring in Charleston SC. Discover the best girls getaways with Elm Events Charleston's complete guide to unforgettable festivities.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --ivory: #FBF6EF;
+            --ivory-deep: #F3EADC;
+            --teal: #24444C;
+            --teal-deep: #16292E;
+            --coral: #E38B6F;
+            --coral-soft: #F1B79E;
+            --gold: #B98B4E;
+            --ink: #2B2B27;
+        }
+
+        * { box-sizing: border-box; }
+
         body {
-            background-color: #FF69B4;
-            color: white;
+            background-color: var(--ivory);
+            color: var(--ink);
+            font-family: 'Jost', sans-serif;
             font-size: 18px;
-            font-family: 'Arial', sans-serif;
+            line-height: 1.65;
         }
-        
+
+        h1, h2, h3, .display-font {
+            font-family: 'Fraunces', serif;
+            color: var(--teal-deep);
+        }
+
+        a { color: var(--coral); }
+        a:hover { color: var(--teal); }
+
         .navbar {
-            background-color: black !important;
-            border-bottom: 3px solid white;
+            background-color: var(--teal-deep) !important;
+            padding: 20px 0;
         }
-        
+
         .navbar-brand {
-            color: white !important;
-            font-weight: bold;
+            color: var(--ivory) !important;
+            font-family: 'Fraunces', serif;
+            font-weight: 500;
             font-size: 24px;
+            letter-spacing: 0.02em;
         }
-        
-        h1, h2 {
-            color: white;
-            border-bottom: 3px solid black;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-        }
-        
-        h1 {
-            font-size: 48px;
-            font-weight: bold;
+
+        .hero {
+            padding: 90px 0 70px;
             text-align: center;
-            margin-top: 40px;
+            position: relative;
         }
-        
-        h2 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-top: 50px;
+
+        .hero::after {
+            content: "";
+            display: block;
+            width: 64px;
+            height: 2px;
+            background: var(--coral);
+            margin: 34px auto 0;
         }
-        
-        .card {
-            background-color: white;
-            color: black;
-            border: 3px solid black;
-            margin-bottom: 25px;
-            transition: transform 0.3s;
+
+        h1 {
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 1.15;
+            max-width: 780px;
+            margin: 0 auto;
         }
-        
-        .card:hover {
-            transform: translateY(-5px);
+
+        .hero-sub {
+            max-width: 620px;
+            margin: 28px auto 0;
+            font-size: 19px;
+            color: #4a4a44;
         }
-        
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 2px solid black;
-        }
-        
-        .card-title {
-            color: #FF69B4;
-            font-weight: bold;
-            font-size: 22px;
-        }
-        
-        .card-text {
-            font-size: 16px;
-        }
-        
+
         .cta-button {
-            background-color: black;
-            color: white;
-            border: 3px solid white;
-            padding: 15px 40px;
-            font-size: 22px;
-            font-weight: bold;
+            background-color: var(--coral);
+            color: var(--ivory);
+            border: none;
+            padding: 14px 36px;
+            font-family: 'Jost', sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
             text-decoration: none;
             display: inline-block;
-            margin: 30px 0;
-            transition: all 0.3s;
+            margin-top: 34px;
+            border-radius: 2px;
+            transition: background-color 0.25s ease;
         }
-        
+
         .cta-button:hover {
-            background-color: white;
-            color: #FF69B4;
-            border-color: black;
+            background-color: var(--teal-deep);
+            color: var(--ivory);
         }
-        
-        .section-container {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 2px solid black;
-            padding: 30px;
-            margin: 30px 0;
-            border-radius: 10px;
+
+        .activities {
+            padding: 20px 0 10px;
         }
-        
-        .list-group-item {
-            background-color: white;
-            color: black;
-            border: 2px solid black;
-            font-size: 18px;
-            margin-bottom: 10px;
+
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
+            margin-bottom: 36px;
         }
-        
-        .list-group-item strong {
-            color: #FF69B4;
+
+        .activity-card { height: 100%; }
+
+        .activity-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 3px;
         }
-        
+
+        .activity-card h3 {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 18px 0 8px;
+        }
+
+        .activity-card p {
+            font-size: 16px;
+            color: #4a4a44;
+            margin: 0;
+        }
+
+        .band { padding: 64px 0; }
+        .band-tint { background-color: var(--ivory-deep); }
+        .band-teal { background-color: var(--teal-deep); color: var(--ivory); }
+        .band-teal h2 { color: var(--ivory); }
+
+        .venue-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+            column-gap: 48px;
+        }
+
+        .venue-list li {
+            break-inside: avoid;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(43, 43, 39, 0.12);
+        }
+
+        .band-teal .venue-list li {
+            border-bottom: 1px solid rgba(251, 246, 239, 0.18);
+        }
+
+        .venue-list .venue-name {
+            font-family: 'Fraunces', serif;
+            font-weight: 500;
+            font-size: 19px;
+            display: block;
+            margin-bottom: 4px;
+            color: var(--teal-deep);
+        }
+
+        .band-teal .venue-list .venue-name { color: var(--coral-soft); }
+
+        .venue-list p {
+            margin: 0;
+            font-size: 15.5px;
+            color: #4a4a44;
+        }
+
+        .band-teal .venue-list p { color: rgba(251, 246, 239, 0.75); }
+
+        @media (max-width: 767px) {
+            .venue-list { columns: 1; }
+            h1 { font-size: 38px; }
+        }
+
+        .spotlight {
+            background-color: var(--ivory);
+            border: 1px solid rgba(185, 139, 78, 0.4);
+            padding: 40px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .spotlight .venue-name { font-size: 26px; }
+
+        .spotlight p {
+            max-width: 640px;
+            margin: 14px auto 0;
+        }
+
+        .closing { text-align: center; padding: 80px 0; }
+        .closing h2 { max-width: 640px; margin: 0 auto 20px; }
+        .closing p { max-width: 560px; margin: 0 auto; color: #4a4a44; }
+
         footer {
-            background-color: black;
-            color: white;
+            background-color: var(--teal-deep);
+            color: rgba(251, 246, 239, 0.7);
             padding: 30px 0;
-            margin-top: 50px;
-            border-top: 3px solid white;
+            font-size: 14.5px;
         }
+
+        footer a { color: var(--coral-soft); }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-dark">
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="https://elmeventscharleston.com">Elm Events Charleston</a>
+            <a class="navbar-brand" href="index.html">Elm Events</a>
+            <a class="navbar-brand" href="about.html">About</a>
+            <a class="navbar-brand" href="contact.html">Contact</a>
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Things To Do In Charleston SC</h1>
-        <div class="text-center">
-            <p style="font-size: 22px; margin: 30px 0;">
-                <a href="https://www.partycharleston.com">Charleston SC party</a> for your girls weekend celebration, main character weekend, and the ultimate girls getaway before the big day. From historic charm to beachside vibes, create unforgettable memories during your trip.
+    <div class="hero">
+        <div class="container">
+            <h1>Things To Do In Charleston, SC For A Girls Trip</h1>
+            <p class="hero-sub">
+                A guide for your girls weekend, main character weekend, or the ultimate getaway before the big day — historic charm by afternoon, harbor breeze by night.
             </p>
-            <a href="https://www.partycharleston.com/parties/college.html" class="cta-button">Plan Your Celebration</a>
         </div>
+    </div>
 
+    <div class="container activities">
         <h2>Top Activities</h2>
-        
-        <div class="row">
-            
+        <div class="row g-4">
             <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?w=500" class="card-img-top" alt="Spa Day">
-                    <div class="card-body">
-                        <h5 class="card-title">Fine Dining</h5>
-                        <p class="card-text">Indulge in a luxurious meal. The perfect way to energize before the festivities begin.</p>
-                    </div>
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1514361892635-6b07e31e75f9?w=500" alt="Fine dining table setting">
+                    <h3>Fine Dining</h3>
+                    <p>Indulge in a luxurious meal — the perfect way to energize before the festivities begin.</p>
                 </div>
             </div>
-       
-            
             <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=500" class="card-img-top" alt="Shopping">
-                    <div class="card-body">
-                        <h5 class="card-title">King Street Crawl</h5>
-                        <p class="card-text">Walk till you drop on King Street, featuring bars, local eat ins, and everything tons of clubs.</p>
-                    </div>
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=500" alt="King Street shopping">
+                    <h3>King Street Crawl</h3>
+                    <p>Walk it off on King Street, past boutiques, local eateries, and no shortage of bars.</p>
                 </div>
             </div>
-            
             <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500" class="card-img-top" alt="music">
-                    <div class="card-body">
-                        <h5 class="card-title">Find A Local Show</h5>
-                        <p class="card-text">Watch authentic Charleston comedy, live show, or music.</p>
-                    </div>
+                <div class="activity-card">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500" alt="Live music show">
+                    <h3>Find A Local Show</h3>
+                    <p>Catch authentic Charleston comedy, live music, or a late-night set.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="section-container">
-            <h2>Best Restaurants & Cafes for Your Girls Getaway</h2>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Husk Restaurant</strong> - Upscale Southern cuisine in a historic Victorian mansion. Perfect for a special celebratory dinner.</li>
-                <li class="list-group-item"><strong>The Darling Oyster Bar</strong> - Fresh oysters, seafood towers, and coastal vibes in a chic downtown setting.</li>
-                <li class="list-group-item"><strong>Halls Chophouse</strong> - Premium steaks and live music make this an elegant choice for the crew.</li>
-                <li class="list-group-item"><strong>Fleet Landing Restaurant</strong> - Waterfront dining with stunning harbor views and fresh seafood specialties.</li>
-                <li class="list-group-item"><strong>Poogan's Porch</strong> - Classic Lowcountry dishes in a charming historic house with Southern hospitality.</li>
-                <li class="list-group-item"><strong>Sweet Palm Coffee</strong> - Quick grab-and-go spot for amazing coffee and breakfast treats to fuel your adventures.</li>
-                <li class="list-group-item"><strong>Leon's Oyster Shop</strong> - Casual vibes with fried chicken, oysters, and a fun rooftop bar experience.</li>
-                <li class="list-group-item"><strong>The Ordinary</strong> - Seafood hall and oyster bar serving exceptional raw bar selections and coastal fare.</li>
+    <div class="band band-tint">
+        <div class="container">
+            <h2>Best Restaurants &amp; Cafes for Your Girls Getaway</h2>
+            <ul class="venue-list">
+                <li><span class="venue-name">Husk Restaurant</span><p>Upscale Southern cuisine in a historic Victorian mansion — perfect for a celebratory dinner.</p></li>
+                <li><span class="venue-name">The Darling Oyster Bar</span><p>Fresh oysters, seafood towers, and coastal vibes in a chic downtown setting.</p></li>
+                <li><span class="venue-name">Halls Chophouse</span><p>Premium steaks and live music make this an elegant choice for the crew.</p></li>
+                <li><span class="venue-name">Fleet Landing Restaurant</span><p>Waterfront dining with stunning harbor views and fresh seafood specialties.</p></li>
+                <li><span class="venue-name">Poogan's Porch</span><p>Classic Lowcountry dishes in a charming historic house with Southern hospitality.</p></li>
+                <li><span class="venue-name">Sweet Palm Coffee</span><p>Quick grab-and-go spot for great coffee and breakfast treats to fuel the day.</p></li>
+                <li><span class="venue-name">Leon's Oyster Shop</span><p>Casual vibes with fried chicken, oysters, and a fun rooftop bar.</p></li>
+                <li><span class="venue-name">The Ordinary</span><p>Seafood hall and oyster bar serving exceptional raw bar selections.</p></li>
+                <li><span class="venue-name">The Chubby Fish</span><p>Chef-driven seafood spot on Rutledge with a tight, ever-changing menu of the day's catch.</p></li>
+                <li><span class="venue-name">Oak Steakhouse</span><p>Elegant downtown steakhouse in a historic bank building, known for dry-aged cuts.</p></li>
+                <li><span class="venue-name">Hyman's Seafood</span><p>Charleston institution serving classic Lowcountry seafood in a lively, packed room.</p></li>
             </ul>
         </div>
+    </div>
 
-        <div class="section-container">
-            <h2>Hottest Bars & Nightlife for Your Main Character Weekend</h2>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>Prohibition</strong> - Upscale speakeasy with craft cocktails and a sophisticated atmosphere on King Street.</li>
-                <li class="list-group-item"><strong>The Rooftop Bar at The Vendue</strong> - Stunning rooftop views, signature cocktails, and the perfect sunset spot.</li>
-                <li class="list-group-item"><strong>Mynt Bar</strong> - High-energy nightclub with DJ music and dancing for those ready to party all night.</li>
-                <li class="list-group-item"><strong>The Cocktail Club</strong> - Creative craft cocktails in an intimate speakeasy-style setting.</li>
-                <li class="list-group-item"><strong>Pavilion Bar</strong> - Outdoor bar at The Market Pavilion Hotel with harbor views and live music.</li>
-                <li class="list-group-item"><strong>Stars Rooftop & Grill Room</strong> - Trendy rooftop lounge with panoramic city views and handcrafted drinks.</li>
-                <li class="list-group-item"><strong>The Griffin</strong> - British pub atmosphere with excellent beer selection and late-night eats.</li>
-                <li class="list-group-item"><strong>Republic Garden & Lounge</strong> - Outdoor garden bar perfect for groups, featuring live music and creative cocktails.</li>
-            </ul>
-        </div>
-
-        <div class="section-container">
-            <h2>Must-See Entertainment With YOur Palms</h2>
+    <div class="section-container">
+            <h2>Charleston Entertainment</h2>
             <ul class="list-group">
                 <li class="list-group-item">
-                    <strong><a href="https://michaelafterdark.com" style="color: #FF69B4; text-decoration: none;">Michael After Dark</a></strong> - The ultimate entertainment experience for your fling before the ring! Professional, unforgettable performances that will make your celebration the main character moment it deserves. Perfect for lingerie showers, hotel suite parties, or private venue celebrations. This is THE show that will have everyone talking long after the weekend!
+                    <strong><a href="https://michaelatyourplace.com" style="color: #FF69B4; text-decoration: none;">Michael At Your Place</a></strong> - The ultimate entertainment experience for your fling before the ring! Professional, unforgettable performances that will make your celebration the main character moment it deserves. Perfect for lingerie showers, hotel suite parties, or private venue celebrations. This is THE show that will have everyone talking long after the weekend!
                 </li>
             </ul>
         </div>
 
-        <div class="text-center" style="margin: 50px 0;">
-            <h2 style="border: none;">Ready to Plan Your Fling Before the Ring?</h2>
-            <p style="font-size: 20px; margin: 30px 0;">
-                Charleston SC offers everything you need for an epic girl weekend celebration. From beach days to nightlife, fine dining to unforgettable entertainment, make your main character weekend one for the books See out <a href="girls-trip-charleston.html">Girls trip page</a>!
+
+    <div class="band band-teal">
+        <div class="container">
+            <h2>Hottest Bars &amp; Nightlife for Your Main Character Weekend</h2>
+            <ul class="venue-list">
+                <li><span class="venue-name">Prohibition</span><p>Upscale speakeasy with craft cocktails and a sophisticated atmosphere on King Street.</p></li>
+                <li><span class="venue-name">The Rooftop Bar at The Vendue</span><p>Stunning rooftop views, signature cocktails, and the perfect sunset spot.</p></li>
+                <li><span class="venue-name">Mynt Bar</span><p>High-energy nightclub with DJ music and dancing for those ready to go all night.</p></li>
+                <li><span class="venue-name">The Cocktail Club</span><p>Creative craft cocktails in an intimate speakeasy-style setting.</p></li>
+                <li><span class="venue-name">Pavilion Bar</span><p>Outdoor bar at The Market Pavilion Hotel with harbor views and live music.</p></li>
+                <li><span class="venue-name">Stars Rooftop &amp; Grill Room</span><p>Trendy rooftop lounge with panoramic city views and handcrafted drinks.</p></li>
+                <li><span class="venue-name">The Griffin</span><p>British pub atmosphere with an excellent beer selection and late-night eats.</p></li>
+                <li><span class="venue-name">Republic Garden &amp; Lounge</span><p>Outdoor garden bar perfect for groups, with live music and creative cocktails.</p></li>
+                <li><span class="venue-name">OnAir Live</span><p>Live music venue and bar bringing high-energy shows and a fun crowd.</p></li>
+                <li><span class="venue-name">Uptown Social</span><p>Rooftop bar and lounge with skyline views, great for a lively group toast.</p></li>
+                <li><span class="venue-name">Trio</span><p>Restaurant, bar, and rooftop combo on King Street with a lively late-night scene.</p></li>
+                <li><span class="venue-name">Frontier Lounge</span><p>Laid-back neighborhood bar with a quirky vibe and a strong drink menu.</p></li>
+                <li><span class="venue-name">Shem Creek Bars</span><p>A strip of waterfront bars in Mount Pleasant, perfect for sunset drinks and dockside hangs.</p></li>
+                <li><span class="venue-name">Honky Tonk Ladson</span><p>Country bar with line dancing, live music, and a rowdy good time for the crew.</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="closing">
+        <div class="container">
+            <h2>Ready to Plan Your Fling Before the Ring?</h2>
+            <p>
+                Charleston offers everything you need for an epic girls weekend — beach days, nightlife, fine dining, and unforgettable entertainment. Make your main character weekend!
             </p>
             <a href="https://www.partycharleston.com" class="cta-button">Party Charleston</a>
         </div>
@@ -221,11 +324,11 @@
 
     <footer>
         <div class="container text-center">
-            <p style="margin: 0; font-size: 18px;">&copy; 2024 Elm Events Charleston | Your Guide to Unforgettable Celebrations in Charleston SC | <a href="https://charlestonbacheloretteactivities.com">Charleston Bachelorette Activities</a></p>
-            <p style="margin: 10px 0 0 0;"><a href="https://elmeventscharleston.com" style="color: #FF69B4; text-decoration: none;">elmeventscharleston.com</a></p>
+            <p style="margin: 0;">&copy; 2026 Elm Events Charleston | <a href="https://charlestonbacheloretteactivities.com">Charleston Bachelorette Activities</a></p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+   
